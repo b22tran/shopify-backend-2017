@@ -1,6 +1,7 @@
 #shopifyBackendProblem
 
 Back End Development Problem
+Student Id:991173683
 
 One Shopify merchant bakes tasty treats and sells them locally, but they haven’t been able to bake cookies fast enough to keep up with the demand of all the orders.  Because of this, they have asked for your help to organize all cookie orders, so they can see which orders they will need to bake more cookies for.
 
@@ -10,6 +11,10 @@ You have a limited amount of cookies remaining and a list of orders. The merchan
 
 You have access to a paginated API in: https://backend-challenge-fall-2017.herokuapp.com/orders.json 
 where you can obtain all the orders. The API accepts a `page` parameter, example: https://backend-challenge-fall-2017.herokuapp.com/orders.json?page=2
+
+Example JSON data:
+
+{"available_cookies":6,"orders":[{"id":11,"fulfilled":false,"customer_email":"julien@interview.com","products":[{"title":"Carrot Cake","amount":1,"unit_price\"":20.45},{"title":"Cookie","amount":1,"unit_price":14.5}]}],"pagination":{"current_page":3,"per_page":5,"total":11}}
 
 Requirements
 
@@ -39,3 +44,4 @@ Output (in JSON)
   "remaining_cookies": 0,
   "unfulfilled_orders": [ 3, 5 ]
 }
+
