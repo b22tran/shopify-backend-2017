@@ -44,9 +44,21 @@ public class Orders {
 	public ArrayList<Products> getProducts() {
 		return products;
 	}
+	
+	public int getProductCookieAmount(){
+		int cookieAmount = 0;
+		for (Products prod : this.products) {
+			if (prod.getTitle().toLowerCase().equals("cookie")) {
+				cookieAmount = prod.getAmount();
+			}
+		}
+		return cookieAmount;
+	}
 
 	public void setProducts(ArrayList<Products> products) {
 		this.products = products;
 	}
+	
+	
 
 }
